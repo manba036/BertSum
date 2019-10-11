@@ -97,4 +97,15 @@ python train.py -mode validate -bert_data_path ../bert_data/cnndm -model_path MO
 * `MODEL_PATH` is the directory of saved checkpoints
 * `RESULT_PATH` is where you want to put decoded summaries (default `../results/cnndm`)
 
+---
+## manba036
+
+```bash
+git clone https://github.com/manba036/BertSum BertSum-japanese
+cd BertSum-japanese
+./run_jupyter_pytorch_bert.sh
+```
+
+http://nlp.ist.i.kyoto-u.ac.jp/index.php?BERT%E6%97%A5%E6%9C%AC%E8%AA%9EPretrained%E3%83%A2%E3%83%87%E3%83%AB
+https://qiita.com/masaki_sfc/items/1564cf9122db7ed47096
 
