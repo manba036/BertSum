@@ -1,1 +1,8 @@
+fastprogress
+matplotlib
+mojimoji
+multiprocess
 pandas
+pyrouge
+sklearn
+tensorboardX

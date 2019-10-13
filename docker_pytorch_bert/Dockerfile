@@ -54,6 +54,10 @@ RUN sed -i -e \
     "s#text = self._tokenize_chinese_chars(text)#\# text = self._tokenize_chinese_chars(text)#" \
     /usr/local/lib/python3.6/dist-packages/pytorch_pretrained_bert/tokenization.py
 
+RUN sed -i -e \
+    "s#token = token.strip()#token = token.rstrip('\\\\n')#" \
+    /usr/local/lib/python3.6/dist-packages/pytorch_pretrained_bert/tokenization.py
+
 COPY ./requirements.txt /requirements.txt
 RUN pip3 install -r /requirements.txt
 

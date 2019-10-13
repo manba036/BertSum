@@ -44,7 +44,7 @@ class Bert(nn.Module):
     def __init__(self, temp_dir, load_pretrained_bert, bert_config):
         super(Bert, self).__init__()
         if(load_pretrained_bert):
-            self.model = BertModel.from_pretrained('bert-base-uncased', cache_dir=temp_dir)
+            self.model = BertModel.from_pretrained('../models/Japanese_L-12_H-768_A-12_E-30_BPE')
         else:
             self.model = BertModel(bert_config)
 
